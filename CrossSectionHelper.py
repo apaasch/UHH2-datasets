@@ -23,7 +23,7 @@ class MCSampleValuesHelperPrototype():
     Prototype class for MCSampleValuesHelper
     """
 
-    __years = ["UL16preVFP","UL16postVFP","UL17","UL18"]
+    __years = ["UL16preVFP","UL16postVFP","UL17","UL18","2022preEE","2022postEE","2023"]
     __energies = ["13TeV"]
     __xs_field_names = []
     __nevt_field_names = []
@@ -3048,6 +3048,189 @@ class MCSampleValuesHelper(MCSampleValuesHelperPrototype):
                 Xml_UL18="RunII_106X_v2/SM/UL18/QCD_HT2000toInf_CP5_PSWeights_madgraph-pythia8_Summer20UL18_v1.xml", XmlSource_UL18="/QCD_HT2000toInf_TuneCP5_PSWeights_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM",
             ),
         },
+
+        "QCDPT50to80" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=16760000, XSecSource_13TeV="GenXSecAnalyzer averaged over years" # 13p6 TeV!
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=21136440.0,
+                NEVT_2022postEE=19940303.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-50to80_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-50to80_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-50to80_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-50to80_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT80to120" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=2517000, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=30781516.0,
+                NEVT_2022postEE=40071820.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-80to120_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-80to120_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-80to120_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-80to120_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT120to170" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=442200, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=31356801.0,
+                NEVT_2022postEE=40071820.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-120to170_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-120to170_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-120to170_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-120to170_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT170to300" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=113400, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=29860794.0,
+                NEVT_2022postEE=41065808.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-170to300_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-170to300_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-170to300_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-170to300_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT300to470" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=7619, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=58535897.0,
+                NEVT_2022postEE=80355820.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-300to470_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-300to470_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-300to470_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-300to470_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT470to600" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=625.1, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=28540568.0,
+                NEVT_2022postEE=48417913.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-470to600_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-470to600_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-470to600_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-470to600_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT600to800" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=179.7, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=75092875.0,
+                NEVT_2022postEE=92473677.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_HT-600to800_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-600to800_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_HT-600to800_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-600to800_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT800to1000" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=30.71, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=43868300.0,
+                NEVT_2022postEE=53572105.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_HT-800to1000_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-800to1000_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_HT-800to1000_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-800to1000_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT1000to1400" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=8.944, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=22322802.0,
+                NEVT_2022postEE=27675691.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_HT-1000to1400_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-1000to1400_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_HT-1000to1400_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-1000to1400_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT1400to1800" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=0.8096, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=7466758.0,
+                NEVT_2022postEE=9974680.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-1400to1800_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-1400to1800_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-1400to1800_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-1400to1800_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT1800to2400" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=0.1151, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=3683361.0,
+                NEVT_2022postEE=3683361.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-1800to2400_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-1800to2400_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-1800to2400_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-1800to2400_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT2400to3200" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=0.007592, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=2158928.0,
+                NEVT_2022postEE=2694345.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-2400to3200_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-2400to3200_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-2400to3200_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-2400to3200_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
+        "QCDPT3200" : {
+            "CrossSection" : MCSampleValuesHelperPrototype.XSValues(
+                XSec_13TeV=0.0002311, XSecSource_13TeV="GenXSecAnalyzer averaged over years"
+            ),
+            "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
+                NEVT_2022preEE=864567.0,
+                NEVT_2022postEE=1294987.0,
+            ),
+            "XMLname" : MCSampleValuesHelperPrototype.XMLValues(
+                Xml_2022preEE="Run3_126X_v1/2022/QCD_PT-3200_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022preEE="/QCD_PT-3200_TuneCP5_13p6TeV_pythia8/Run3Summer22MiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+                Xml_2022postEE="Run3_126X_v1/2022/QCD_PT-3200_EE_TuneCP5_13p6TeV_pythia8.xml", XmlSource_2022postEE="/QCD_PT-3200_TuneCP5_13p6TeV_pythia8/Run3Summer22EEMiniAODv3-124X_mcRun3_2022_realistic_v12-v2/MINIAODSIM",
+            ),
+        },
+
 
         "ZprimeToZHToZlepHinc-600": {
                 "CrossSection" : MCSampleValuesHelperPrototype.XSValues( XSec_13TeV=1, XSecSource_13TeV="XSDB (LO)"),
