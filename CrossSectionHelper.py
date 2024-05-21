@@ -75,8 +75,9 @@ class MCSampleValuesHelper(MCSampleValuesHelperPrototype):
     """
 
     __values_dict = {
-
+      
         "JetHT_RunC": {
+
             "NEvents" : MCSampleValuesHelperPrototype.NEventsValues(
                 # NEVT_2022preEE=15621241,
                 NEVT_2022preEE=15620904,
